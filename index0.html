@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mapa Interactivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script src="js/jquery-3.2.0.js"></script>
+    <!-- <script src="../js/bootstrap.js"></script> -->
+
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+</head>
+
+<body>
+
+<form id="variables"  class="container" >
+
+  <div >
+    <select class="area-select">
+      <option value='0'>Seleccione el area deseada</option>
+    </select>
+  </div>
+
+</form>
+
+  <script>
+    var form = document.getElementById("variables");
+    form.onsubmit = function(e){
+      e.preventDefault();
+
+        variablesModulo.enviarFormulario(form);
+       //self.location="index.html";
+
+    }
+  </script>
+
+
+</body>
+
+<script src='js/plantilla.js'></script>
+<!-- <script src='js/crear.js'></script> -->
+
+
+</html>
